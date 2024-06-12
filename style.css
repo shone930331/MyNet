@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+
+*{
+    font-family: "LXGW WenKai TC", cursive;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#about {
+    background: #D3A4FF;
+    padding-top: 70px; /* Increased padding for more space */
+}
+
+#top {
+    background: #D3A4FF;
+    padding-top: 70px; /* Increased padding for more space */
+}
+
+#gallery {
+    background:	#ADADAD; /* Light gray */
+    padding-top: 70px; /* Adjusted for fixed navbar */
+}
+
+#contact {
+    background:	#ADADAD;
+    padding-top: 70px; /* Adjusted for fixed navbar */
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #4b0082; /* Dark purple */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.carousel-indicators li {
+    background-color: #000;
+}
+
+.btn-dark-purple {
+    background-color: #4b0082;
+    border-color: #4b0082;
+    color: #fff;
+    border-radius: 20px; /* Rounded corners */
+}
+
+.btn-dark-purple:hover {
+    background-color: #360055;
+    border-color: #360055;
+}
+
+.text-dark-purple {
+    color: #4b0082;
+}
+
+.text-dark-gray {
+    color: #6c757d;
+}
+
+.bg-dark-purple {
+    background-color: #4b0082 !important;
+}
+
+.bg-light-gray {
+    background-color: #ADADAD !important;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 20px; /* Rounded corners for form controls */
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.toTop-arrow {
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 25px;
+	height: 6px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.42rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.42rem;
+}
+.toTop-arrow:focus {outline: none;}
